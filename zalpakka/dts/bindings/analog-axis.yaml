@@ -1,0 +1,30 @@
+description: Analog axis
+
+compatible: "analog-axis"
+
+include: base.yaml
+
+child-binding:
+  properties:
+    io-channels:
+      type: phandle-array
+      required: true
+
+    offset:
+      type: int
+      required: true
+
+    dead-zone:
+      type: int
+      required: true
+
+    limit:
+      type: int
+      required: true
+
+    code:
+      type: int
+      required: true
+
+    invert:
+      type: boolean
